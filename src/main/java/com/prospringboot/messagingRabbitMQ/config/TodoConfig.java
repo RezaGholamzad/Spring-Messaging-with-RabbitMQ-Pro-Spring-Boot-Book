@@ -48,6 +48,9 @@ public class TodoConfig {
         Queue. You can manually create a queue, but in this case, you are
         creating it programmatically. You pass the name of the queue, if is
         going to be durable or exclusive, and auto-delete.
+
+        There are two types of Queue - durable and non-durable.
+        Durable queue survives a server restart.
      */
     @Bean
     public Queue createQueue(@Value("${todo.amqp.queue}") String queue){

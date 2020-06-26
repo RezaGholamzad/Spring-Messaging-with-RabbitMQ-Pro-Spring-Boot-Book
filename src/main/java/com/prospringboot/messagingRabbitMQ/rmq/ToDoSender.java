@@ -43,4 +43,10 @@ public class ToDoSender {
         toDoProducer.sendTo(destination,
                 new ToDo("Thinking on Spring Boot at " + dateFormat.format(new Date())));
     }
+
+    /*
+        RabbitMQ UI management :
+            http://localhost:15672
+            user and password = guest
+     */
 }
